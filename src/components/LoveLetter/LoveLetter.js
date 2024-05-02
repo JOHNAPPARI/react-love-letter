@@ -31,14 +31,16 @@ const LoveLetter = () => {
   };
 
   return (
-    <div className={`envelope ${isOpen ? 'open' : ''}`} onClick={!isFullSize ? handleOpenLetter : handleCloseLetter}>
+    <div className={`envelope ${isOpen ? 'open' : ''}`} onClick={!isFullSize ? handleOpenLetter : handleCloseLetter}> 
+    
       <div className="flap"></div>
       <div className="body"></div>
       <div className={`letter ${isFullSize ? 'fullSize' : ''}`}>
-        My dear kundanapu bomma🖤,<br />
+        {/* My dear kundanapu bomma🖤,<br />
         Never have i been so blessed as to fall in love with someone as wonderful as you...<br />i loveeee youuuu :)<br />
         always yours,<br />
-        @Me🖤You
+        @Me🖤You */}
+        FUCK OFF
       </div>
       <audio ref={audioRef} src={audioFile} onError={(e) => console.error('Audio error:', e.message)} />
     </div>
